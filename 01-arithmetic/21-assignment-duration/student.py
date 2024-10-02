@@ -12,4 +12,4 @@ def minutes(number):
 
    return seconds_left // 60
 
-print(minutes(400))
+print(minutes(4000))
