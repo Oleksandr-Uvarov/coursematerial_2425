@@ -4,13 +4,8 @@ def gcd(x, y):
     if y < 0:
         y = -y
 
-    divisor = max(x, y)
-
+    divisor = min(x, y)
     while True:
-        if divisor > x or divisor > y:
-            divisor -= 1
-            continue
-
         if divisor == 0:
             return 1
         
@@ -22,3 +17,17 @@ def gcd(x, y):
     return divisor
 
 print(gcd(10, -15))
+print(gcd(12, 16))
+print(gcd(40, 20))
+print(gcd(20, 25))
+print(gcd(100, 100))
+print(gcd(17, 31))
+print(gcd(17*31*97, 17 * 37 * 97))
+print(gcd(10**100, 10**100))
+            # (12, 16, 4),
+            # (40, 20, 20),
+            # (20, 25, 5),
+            # (100, 100, 100),
+            # (17, 31, 1),
+            # (17 * 31 * 97, 17 * 37 * 97, 17 * 97),
+            # (10**100, 10**200, 10**100),

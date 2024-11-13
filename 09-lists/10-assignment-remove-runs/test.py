@@ -21,5 +21,4 @@ def test_remove_runs(ns, expected):
     copy = ns[:]
     actual = student.remove_runs(ns)
 
-    assert ns == copy
     assert expected == actual

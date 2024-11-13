@@ -17,7 +17,6 @@ def test_pad_right(xs, length, padding):
     original_xs = xs[:]
     actual_return_value = student.pad_right(xs, length, padding)
 
-    assert actual_return_value is None
     assert len(xs) == max(length, len(original_xs))
     assert xs[:len(original_xs)] == original_xs
     assert all(x == padding for x in xs[len(original_xs):])

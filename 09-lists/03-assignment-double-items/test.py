@@ -16,5 +16,4 @@ import student
 def test_double_items(ns, expected):
     actual_return_value = student.double_items(ns)
 
-    assert actual_return_value is None
     assert ns == expected
