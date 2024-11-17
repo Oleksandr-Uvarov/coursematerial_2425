@@ -57,5 +57,5 @@ import student
     ),
 ])
 def test_counts(xs, expected):
-    actual = student.counts(xs)
+    actual = student.count(xs)
     assert expected == actual
